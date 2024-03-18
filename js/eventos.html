@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exemplo de JavaScript</title>
+</head>
+<body>
+<div>
+    <button onclick="sayMagicWord();">Say the Magic Word</button>
+    <button onclick="sayMagicWordPT();">Diz as palavras mágicas!</button>
+    <p id="disse">O que dizes?</p>
+</div>
+
+<ul>
+    <li>aaa</li>
+    <li>aaa</li>
+    <li>aaa</li>
+</ul>
+
+<script>
+    // Seleciona todos os elementos <p>
+    var paragrafos = document.getElementsByTagName("li");
+
+    // Itera sobre a coleção de elementos <p> e modifica seu conteúdo
+    for (var i = 0; i < paragrafos.length; i++) {
+        paragrafos[i].innerHTML = i+1 + " - Este parágrafo foi modificado usando js!";
+    }
+</script>
+
+<script>
+    var idade = 10 + 5;
+    var eMaior = idade > 18;
+    var resultado = (10 === "10") || (5 !== 3);
+
+    alert(resultado);
+</script>
+
+
+<script>    
+    function sayMagicWordPT() {
+        var paragrafo = document.getElementById("disse");  
+        paragrafo.innerHTML = "POR FAVOR!";
+    }
+</script>
+
+<script type="text/javascript" src="please.js"></script>
+</body>
+</html>
+

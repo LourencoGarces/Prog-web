@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" id=frm1>
+        Nome: <input type="text" name="fNome" value="António"><br>
+        Apelido: <input type="text" name="fApelido" value="Lira Fernandes"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    
+    <p>Click em "vamos lá!" para mostrar os valores do formulário</p>
+    <p id="valores"></p>
+    <button onclick="mostraValores()">vamos lá!</button>
+    <script>
+        function mostraValores(){
+        var x= document.getElementById("frm1");
+        var texto="";
+        var i;
+        for (i=0; i<x.length; i++){
+            texto+= x.elements[i].value + "<br>";
+        }
+        document.getElementById("valores").innerHTML=texto;
+        }
+    </script>    
+</body>
+</html>

@@ -1,0 +1,3 @@
+function sayMagicWord() {
+    alert('Please!');
+}   
